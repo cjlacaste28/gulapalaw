@@ -1,0 +1,45 @@
+.carousel-img {
+    object-fit: cover;
+    height: 100vh;
+}
+
+#lawyers .row:nth-child(2n) {
+    background-color: var(--light);
+}
+
+#footer-img{
+    width: 50px;
+  }
+
+@media (min-width: 992px) {
+    #lawyers .row:nth-child(2n) .lawyer-info {
+        order: -1;
+    }
+
+    /* #lawyers .row:nth-child(2n) .lawyer-img {
+        order: 1;
+    } */
+}
+@media (max-width: 991px) {
+    #footer-nav .container .footer-image img{
+        width: 120px;
+    }
+}
+
+@media (max-width: 767px) {
+    #footer-nav .container .footer-image{
+        order: -1;
+        margin-bottom: 32px;
+    }
+    #footer-nav .container a{
+        text-align: center;
+    }
+    #footer-nav .container .footer-image img{
+        width: 90px;
+    }
+}
+
+
+#cta {
+    background-color: var(--light);
+}
